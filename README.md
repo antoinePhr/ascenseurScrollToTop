@@ -1,6 +1,6 @@
 # Réalisation d'un ascensseur pour remonter en haut de page
 
-Lien du site : <a href="https://serbo.fr" target="_blank"> serbo.fr </a>
+Lien du site : <a href="https://serbo.fr" target="_blank"> serbo.fr </a> (en cours de développement)
   
  ## Ascenseur en Html, Css Javascript
 <img src="https://data.bloggif.com/distant/user/store/0/8/c/b/91e00941b53ad71c8854669ffee0bc80.gif" alt="Antoine pauthier github" width="400"/>
