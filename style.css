@@ -1,0 +1,169 @@
+/*html {
+  scroll-behavior: smooth;
+}*/
+
+.ascenseurContainer {
+    opacity: .6;
+  	z-index: 500;
+    height: 150px;
+    width: 120px;
+  	transition: all ease  .2s;
+  /*  -webkit-box-reflect: below 0 linear-gradient(transparent 50%, rgba(0, 0, 0, .2));*/
+}
+
+.fondAscenseur {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://serbo.fr/wp-content/uploads/2020/10/fondAscenseurs.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cadre {
+    cursor: pointer;
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://serbo.fr/wp-content/uploads/2020/10/cadre.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.porteD,
+.porteG {
+    cursor: pointer;
+    position: absolute;
+    z-index: 200;
+    height: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .6s ease-in-out;
+}
+
+.porteD {
+    width: 52%;
+    right: 0;
+    background-image: url('http://serbo.fr/wp-content/uploads/2020/10/porteDroite.png');
+}
+
+.porteG {
+    width: 60%;
+    transform: translateY(-50%);
+    left: 0;
+    background-image: url('http://serbo.fr/wp-content/uploads/2020/10/porteGauche.png');
+}
+
+.animAscenseur {
+    width: 13%;
+}
+
+.btnCote{
+    width: auto;
+    height: 25px;
+  	z-index: 90;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.btnCoteVert{
+  display: none;
+  z-index: 100;
+  width: auto;
+  height: 25px;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.lumiere {
+    left: 50%;
+  	z-index: 40;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -20px;
+    width: 35px;
+    height: auto;
+}
+.flecheMonte {
+  	display: none;
+  	z-index: 50;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -20px;
+    width: 35px;
+    height: auto;
+  	animation: monter 1.2s infinite; 	
+}
+.flecheMonteVerte {
+  	display: none;
+  	z-index: 60;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -20px;
+    width: 35px;
+    height: auto;
+  	animation: monter 1.2s infinite; 	
+}
+
+@keyframes monter {
+  0%{
+    opacity: 1;
+  }
+  
+  100%{
+    opacity: 0;
+  }
+}
+.paraAsc {
+    position: absolute;
+    top: 30%;
+    margin-left: 2px;
+    font-weight: 800;
+    left: 50%;
+    color: #C1004C;
+    letter-spacing: 2px;
+    transform: translateX(-50%);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.paraAsc2 {
+    position: absolute;
+    top: 40%;
+    letter-spacing: 2px;
+    margin-left: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.ascAppear{
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 500;
+  right: 10%;
+  bottom: 5%;
+  height: 150px;
+  width: 120px;
+  -webkit-box-reflect: below 0 linear-gradient(transparent 50%, rgba(0, 0, 0, .2));
+  transition: all .8s ease-in-out;
+}
